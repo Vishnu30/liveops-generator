@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Live-Ops Blueprint Generator &mdash; Eloelo Style</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top-nav">
+    <div class="nav-inner container">
+      <div class="logo-mark">
+        <span class="logo-dot"></span>
+        <span class="logo-text">LiveOps Generator</span>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+      <nav class="nav-links">
+        <a href="#generator">Generator</a>
+        <a href="#preview">Preview</a>
+        <a href="#how-it-works">How it works</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="generator" class="container generator-layout">
+    <!-- Left: Form -->
+    <section class="generator-form card">
+      <p class="pill pill-latest">Product</p>
+      <h1>Live-Ops Event Blueprint Generator</h1>
+      <p class="hint">
+        Update the fields for any new campaign and generate a ready-to-host
+        <strong>HTML blueprint page</strong>.
+      </p>
+
+      <form id="eventForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="eventName">Event name</label>
+            <input id="eventName" name="eventName" type="text" required
+              value="IPL 2025 Gifting Sprint"
+              placeholder="IPL 2025 Gifting Sprint" />
+          </div>
+
+          <div class="form-group">
+            <label for="eventTheme">Theme / Tagline</label>
+            <input id="eventTheme" name="eventTheme" type="text" required
+              value="Time-boxed sports moment campaign aligned to IPL 2025"
+              placeholder="Time-boxed sports moment campaign aligned to IPL 2025" />
+          </div>
+
+          <div class="form-group">
+            <label for="eventDates">Dates (display text)</label>
+            <input id="eventDates" name="eventDates" type="text" required
+              value="21–24 March 2025 (4 days)"
+              placeholder="21–24 March 2025 (4 days)" />
+          </div>
+
+          <div class="form-group">
+            <label for="eventHashtag">Hashtag</label>
+            <input id="eventHashtag" name="eventHashtag" type="text"
+              value="#IPL2025"
+              placeholder="#IPL2025" />
+          </div>
+
+          <div class="form-group">
+            <label for="coreAssets">Core asset(s)</label>
+            <input id="coreAssets" name="coreAssets" type="text"
+              value="4 special brand-new IPL virtual gifts"
+              placeholder="4 special brand-new virtual gifts" />
+          </div>
+
+          <div class="form-group">
+            <label for="primaryGoals">Primary goals</label>
+            <input id="primaryGoals" name="primaryGoals" type="text"
+              value="Increase virtual gifting volume, boost creator earnings, and deepen engagement in cricket watch-party rooms"
+              placeholder="Increase gifting volume, boost creator earnings, deepen engagement" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="targetCohorts">Target cohorts</label>
+          <textarea id="targetCohorts" name="targetCohorts" rows="2"
+>Sports viewers, active gifters, mid-tier creators, and new users acquired via IPL hooks</textarea>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="primaryKpis">Primary KPIs (one per line)</label>
+            <textarea id="primaryKpis" name="primaryKpis" rows="4"
+>Virtual gift volume vs 7-day pre-event average
+Gifting ARPPU during event window
+Average watch time in IPL-tagged rooms
+Creator earnings in sports / cricket category</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="secondaryKpis">Secondary KPIs (one per line)</label>
+            <textarea id="secondaryKpis" name="secondaryKpis" rows="4"
+>New gifters activated during IPL matches
+Returning users driven by CRM / notifications
+Number of IPL watch-party live rooms created
+Creators crossing IPL-specific earning milestones</textarea>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="timelinePre">Timeline: Pre-event (one bullet per line)</label>
+            <textarea id="timelinePre" name="timelinePre" rows="4"
+>Lock IPL fixtures and match timings to sync live rooms
+Brief creators on formats, rules, incentives, and IPL gifts
+Pre-schedule CRM pushes teasing special IPL gifts & rewards
+Update in-app surfaces: IPL banners, sports tiles, event category</textarea>
+          </div>
+          <div class="form-group">
+            <label for="timelineDuring">Timeline: During event</label>
+            <textarea id="timelineDuring" name="timelineDuring" rows="4"
+>Host IPL watch-party rooms tagged with #IPL2025
+Run gift-based mini challenges and milestones per match
+Push daily leaderboards for creators and gifters
+Trigger real-time nudges to viewers who haven't gifted yet</textarea>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="timelinePost">Timeline: Post-event</label>
+          <textarea id="timelinePost" name="timelinePost" rows="3"
+>Distribute rewards, coins, and IPL badges
+Send personalised IPL performance recaps to creators and top gifters
+Identify high-value gifters for VIP journeys and future sports events
+Run internal retro using this blueprint as structure</textarea>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="roomFormats">Live room formats (one per line)</label>
+            <textarea id="roomFormats" name="roomFormats" rows="4"
+>IPL watch-along rooms with creators and co-hosts
+Prediction segments (runs in over, wickets, winner of over)
+&quot;Gift for Team&quot; celebration moments on 4s, 6s, and wickets
+Creator vs creator duels based on gifts or peak concurrency</textarea>
+          </div>
+          <div class="form-group">
+            <label for="specialItems">Special items / gifts (one per line)</label>
+            <textarea id="specialItems" name="specialItems" rows="4"
+>Powerplay Blast — medium-value gift triggered in overs 1–6
+Death Over Finisher — high-value gift for overs 17–20
+Super Six Fireworks — triggered when a 6 is hit
+Game-Changer Wicket — triggered on key wickets</textarea>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="creatorLogic">Creator leaderboard logic</label>
+            <textarea id="creatorLogic" name="creatorLogic" rows="3"
+>Score = total coins from IPL gifts + bonus for unique gifters
+Extra bonus for crossing key live concurrency thresholds
+Daily reset leaderboard plus 4-day overall leaderboard for grand prizes</textarea>
+          </div>
+          <div class="form-group">
+            <label for="gifterLogic">Gifter leaderboard logic</label>
+            <textarea id="gifterLogic" name="gifterLogic" rows="3"
+>Score = coins spent on IPL gifts only
+Tiered rewards for top 10, 50, 200 gifters
+Badges for gifting across multiple IPL matches and creators</textarea>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="antiAbuse">Anti-abuse & guardrails (one per line)</label>
+          <textarea id="antiAbuse" name="antiAbuse" rows="3"
+>Cap leaderboard update frequency to avoid spam
+Clear rules against misleading off-platform promises or rewards
+Automated flags for suspicious coin purchase or gifting patterns
+Dedicated moderation for IPL-tagged rooms during live matches</textarea>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="growthTargets">Growth / DAU targets</label>
+            <input id="growthTargets" name="growthTargets" type="text"
+              value="+15–20% DAU uplift on IPL match days"
+              placeholder="+15–20% DAU uplift on event days" />
+          </div>
+          <div class="form-group">
+            <label for="monetisationTargets">Monetisation targets</label>
+            <input id="monetisationTargets" name="monetisationTargets" type="text"
+              value="+30–40% uplift in IPL gifting; 10–15% of viewers convert to gifters"
+              placeholder="+30–40% gifting uplift; 10–15% viewers → gifters" />
+          </div>
+          <div class="form-group">
+            <label for="creatorTargets">Creator success targets</label>
+            <input id="creatorTargets" name="creatorTargets" type="text"
+              value="Top creators 2× usual daily earnings; long-tail creators +20% uplift"
+              placeholder="Top creators 2× earnings; long-tail +20%" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="crmNotes">Key CRM cohorts & journeys (free text)</label>
+          <textarea id="crmNotes" name="crmNotes" rows="4"
+>New IPL viewers → explain cricket gifts + first-gift incentive
+Existing gifters → highlight new IPL gifts, milestones, and gifter leaderboard
+Lapsing payers → comeback offer for first IPL gift during sprint
+Top creators → personalised IPL earnings projections & early brief
+Long-tail creators → plug-and-play show formats with simple KPI targets</textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" id="generatePreviewBtn" class="btn secondary">
+            Update Preview
+          </button>
+          <button type="button" id="downloadHtmlBtn" class="btn primary">
+            Download Blueprint HTML
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Right: Preview -->
+    <section id="preview" class="generator-preview">
+      <div class="card preview-header">
+        <p class="pill">Live Preview</p>
+        <h2 id="previewTitle">Your event blueprint</h2>
+        <p class="hint">
+          This is a <strong>lightweight preview</strong> showing how your
+          blueprint will read. The downloaded HTML file is fully styled and
+          responsive using the same CSS &mdash; ready to be hosted.
+        </p>
+      </div>
+
+      <article class="card preview-summary">
+        <h3 id="previewEventName">IPL 2025 Gifting Sprint</h3>
+        <p class="preview-meta" id="previewMeta">
+          21&ndash;24 March 2025 (4 days) &middot; Time-boxed sports moment campaign aligned to IPL 2025 &middot; #IPL2025
+        </p>
+        <p id="previewGoals" class="preview-body">
+          Increase virtual gifting volume, boost creator earnings, and deepen engagement in cricket watch-party rooms.
+        </p>
+        <ul class="tag-list compact" id="previewTags">
+          <li>Sports Moment</li>
+          <li>Virtual Gifting</li>
+          <li>Short-Window Sprint</li>
+        </ul>
+      </article>
+
+      <article class="card preview-kpis">
+        <h3>Primary KPIs</h3>
+        <ul id="previewPrimaryKpis" class="bullet-list small">
+          <li>Virtual gift volume vs 7-day pre-event average</li>
+          <li>Gifting ARPPU during event window</li>
+        </ul>
+        <h3>Secondary KPIs</h3>
+        <ul id="previewSecondaryKpis" class="bullet-list small">
+          <li>New gifters activated during IPL matches</li>
+          <li>Returning users driven by CRM / notifications</li>
+        </ul>
+      </article>
+
+      <article class="card preview-snippet">
+        <h3>Generated file name</h3>
+        <p class="hint">
+          When you click <strong>Download Blueprint HTML</strong>, we generate a
+          fully styled page like:
+        </p>
+        <code id="previewFileName">event-ipl-2025-gifting-sprint.html</code>
+        <p class="hint" style="margin-top: 0.6rem;">
+          Drop that file into the same folder as this generator, commit to
+          GitHub, and you have a new internal Live-Ops blueprint ready to share.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <section id="how-it-works" class="section section-alt">
+    <div class="container section-header">
+      <h2>How this product works</h2>
+      <p>
+        This is a <strong>fully static, GitHub Pages&ndash;friendly product</strong>.
+        All generation happens in the browser using JavaScript. No backend,
+        no database, no deployment complexity.
+      </p>
+    </div>
+    <div class="container grid-2 grid">
+      <div class="card info-card">
+        <h3>For Live-Ops & Growth</h3>
+        <ol class="numbered-list">
+          <li>Start with the pre-populated IPL 2025 blueprint.</li>
+          <li>Adjust details for any new festival, sports or creator event.</li>
+          <li>Download the auto-generated blueprint HTML.</li>
+          <li>Commit it to the repo alongside previous events.</li>
+        </ol>
+      </div>
+      <div class="card info-card">
+        <h3>For CRM & Product</h3>
+        <ul class="checklist">
+          <li>Use the P&amp;L + KPI sections as a shared spec.</li>
+          <li>Align on live room formats and leaderboard logic.</li>
+          <li>Translate &ldquo;Cohorts &amp; Journeys&rdquo; into MoEngage/Braze flows.</li>
+          <li>Reuse old blueprints as templates for new campaigns.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Live-Ops Event Blueprint Generator &middot; Static, GitHub-ready</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
